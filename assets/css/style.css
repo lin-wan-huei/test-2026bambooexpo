@@ -338,7 +338,9 @@ footer .container{}
     .dmCard .l-infoBx::before{width:100%;}
     .dmCard .l-infoBx__tt{margin-bottom:.25rem;font-weight:550}
 }
-  
+@media screen and (min-width: 768px) {
+    .popUpWrap .close{display: none;}
+}
 @media screen and (max-width: 768px) {
     
     /* 輪播 */
@@ -424,8 +426,8 @@ footer .container{}
         background: var(--subColor2);
         color: #fff;
     }
-    
 } 
+
 @media screen and (max-width: 660px) {
 
     /* 尺寸顯示 */
