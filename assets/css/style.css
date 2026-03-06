@@ -164,9 +164,9 @@ button:active,button:focus,button:hover,button:hover:active{outline:0;text-decor
 .mapCardBody .mkTxt{font-size:11px;color:#959595;letter-spacing: 0;}
 .mapCardBody .swiper{margin-top:20px}
 .toolData{display:flex;flex-wrap:wrap;gap: 10px;margin-bottom: 15px;justify-content: space-between;color: var(--mjColor-d);}
-.toolData__bx{display:flex;gap: 6px;align-items:center}
+.toolData__bx{display:flex;gap: 6px;align-items:flex-start;}
 .toolData__bx .icon img{max-height:21px}
-.toolData__bx .txt{font-size:14px;font-weight:600}
+.toolData__bx .txt{font-size:14px;font-weight:600;line-height: 1.5rem;padding-top: 3px;}
 .mapCardFooter{display: none;}
 
 
@@ -366,7 +366,7 @@ footer .container{}
         z-index: 2;
         max-width: 500px;
         width: calc(100% - 20px);
-        max-height: 90vh;
+        max-height: 80vh;
         margin: 0 auto -1px;
         padding: 30px 0 0;
         border-radius: 40px 0 40px 40px;
@@ -382,7 +382,7 @@ footer .container{}
     .mapCardFooter .btn.--next .icon{order:1}
     .mapCardHead,.mapCardBody{padding-left:20px;padding-right:20px}
     .mapCardBody{
-        max-height: calc(90vh - 130px - 70px);
+        max-height: calc(80vh - 130px - 70px);
         overflow-y: auto;
         padding-bottom: 30px;
     }
@@ -425,6 +425,9 @@ footer .container{}
         justify-content: center;
         background: var(--subColor2);
         color: #fff;
+    }
+    .mapCardHead__pic img.map-nantou_map{
+        padding-top: 20px;
     }
 } 
 
