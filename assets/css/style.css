@@ -10,8 +10,7 @@ body.page-fade::after {opacity: 1;}
 }
 
 /* 多語系顯示：繁中語系加 ._TC、英語系加 ._EN */
-[lang="en"] ._TC,[lang="zh_TW"] ._EN{display: none;}
-
+[lang="en"] ._TC,[lang="zh_TW"] ._EN{display: none!important;}
 /* ----------------------- */
 /* 變數 */
 :root{
@@ -106,7 +105,7 @@ button:active,button:focus,button:hover,button:hover:active{outline:0;text-decor
 .menu__item{}
 .navLink{display: block;cursor: pointer;padding: 0 15px;color: var(--black);font-size: 17px;font-weight: 400;}
 .navLink:hover{color:var(--subColor2)}
-.langToggle{position: relative;}
+.langToggle{position: relative;margin-left: 10px;}
 .langToggle .spanBtn{cursor: pointer;position: absolute;top:50%;width: 34px;height:34px;border-radius:100%;transition:var(--trans);transform:translateY(-50%)}
 .langToggle .spanBtn--en{left: 4px;}
 .langToggle .spanBtn--tc{right: 4px;}
@@ -130,7 +129,7 @@ button:active,button:focus,button:hover,button:hover:active{outline:0;text-decor
 .kv{}
 .kv img{width:100%}
 
-/* 六大展區 */
+/* 展區總覽 */
 .mapWrap{z-index: 1;position: relative;padding: clamp(80px,6vw,100px) 0;background-color: #fff;min-height: 700px;}
 .mapWrap::before,.mapWrap::after{content: '';position: absolute;z-index: -2;top: 0;width: 20%;height: 100%;background-size: 100% 100%;}
 .mapWrap::before{left: 0;background-image: url('../../images/map_bg_l.png');}
@@ -144,6 +143,7 @@ button:active,button:focus,button:hover,button:hover:active{outline:0;text-decor
 [id^="tabNav_"] .bgColor{fill: var(--mjColor-b);transition:var(--trans)}
 [id^="tabNav_"]:hover .bgColor,
 [id^="tabNav_"].active .bgColor{fill: var(--subColor);}
+#tabNav_0{left: 76%;top: 4%;}
 #tabNav_1{left: 56%;top: 17%;}
 #tabNav_2{left:30%;top: 29%;}
 #tabNav_3{left:42%;top: 39%;}
@@ -155,7 +155,9 @@ button:active,button:focus,button:hover,button:hover:active{outline:0;text-decor
 .mapCard{padding: 30px 40px;background: #fff;border-radius: 40px;border: solid 3px var(--subColor2);box-shadow: 0 6px 0 var(--subColor2);}
 .mapCardHead{display: flex;}
 .mapCardHead__mj{display:flex;flex-direction:column}
-.mapCardHead__mj .mjTt{font-size: 34px;color: var(--subColor2);font-weight:700}
+.mapCardHead__mj .mjTt{display: flex;align-items: center;gap: 5px;font-size: 34px;color: var(--subColor2);font-weight:700}
+
+.mapCardHead__mj .mkSpan{display: inline-block;padding: .0125rem .5rem;color:var(--mjColor);background:var(--subColor2);font-size: 18px;font-weight: 500;}
 .mapCardHead__mj .subTt{font-size: 20px;color: var(--subColor);font-weight:600}
 .mapCardHead__pic{text-align: center;flex:1}
 .mapCardHead__pic img{max-height:85px}
@@ -342,7 +344,7 @@ footer .container{}
     .popUpWrap .close{display: none;}
 }
 @media screen and (max-width: 768px) {
-    
+    .langToggle{margin-left: 0px;}
     /* 輪播 */
     .testSwiper {--gap: 2rem;--out: 0;padding: 0;/* 手機不露出 */}
     .testSwiper .swiper-slide {width: 100%;}
@@ -352,7 +354,7 @@ footer .container{}
     /* 常見問題 */
     .faqWrap::before{top:0;}
 
-    /* 六大展區 */
+    /* 展區總覽 */
     .popup-open{overflow:hidden}
     body.popup-open .navbar,
     body.popup-open #gotop{opacity:0;pointer-events:none;transition: all .3s linear;}
@@ -367,7 +369,7 @@ footer .container{}
         max-width: 500px;
         width: calc(100% - 20px);
         max-height: 80vh;
-        margin: 0 auto -1px;
+        margin: 70px auto -1px;
         padding: 30px 0 0;
         border-radius: 40px 0 40px 40px;
         box-shadow: none;

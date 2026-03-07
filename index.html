@@ -19,7 +19,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
@@ -203,8 +205,8 @@
                         </a>
                     </div>
                     <div class="navbarNav__item">
-                        <a class="navLink" href="#exhibitions" title="六大展區">
-                            <span class="_TC">六大展區</span>
+                        <a class="navLink" href="#exhibitions" title="展區總覽">
+                            <span class="_TC">展區總覽</span>
                             <span class="_EN">Exhibitions</span>
                         </a>
                     </div>
@@ -274,12 +276,29 @@
     <section id="exhibitions" class="mapWrap">
         <div class="container">
             <h2 class="blockTitle">
-                <img src="images/block_title_map.svg" alt="六大展區" class="blockTitle__img">
+                <img src="images/block_title_map.svg" alt="展區總覽" class="blockTitle__img">
             </h2>
             <div class="tabsGp twBlock">
                 <div class="twBlock__tw">
                     <img src="images/map_tw.png" alt="Taiwan" class="twImg">
                     <ul class="tabsGp__tabs">
+                        <li id="tabNav_0" data-popup-trigger="popUp_tabCon_0">
+                            <!-- 台北 -->
+                            <svg class="_TC" width="79" height="27" viewBox="0 0 79 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.7623 25.1578C18.2584 25.1578 23.5245 19.9737 23.5245 13.5789C23.5245 7.18404 18.2584 2 11.7623 2C5.26614 2 0 7.18404 0 13.5789C0 19.9737 5.26614 25.1578 11.7623 25.1578Z"
+                                    class="bgColor" />
+                                <path
+                                    d="M11.7623 5.24744L14.3182 10.3521L20.0359 11.1718L15.8991 15.1403L16.874 20.7482L11.7623 18.1025L6.6453 20.7482L7.62021 15.1403L3.4834 11.1718L9.20116 10.3521L11.7623 5.24744Z"
+                                    fill="white" />
+                                <path d="M79 26.5148H31.54L26.3018 14.0998L31.54 1.68481H79V26.5148Z" class="bgColor" />
+                                <path
+                                    d="M50.053 15.937H42.845V18.657H50.053V15.937ZM40.771 21.462V13.999H52.229V21.445H50.053V20.595H42.845V21.462H40.771ZM47.894 8.219L49.475 7.165C51.039 8.627 53.062 10.718 53.946 12.146L52.229 13.387C52.008 13.013 51.702 12.571 51.345 12.095C42.318 12.537 41.111 12.571 40.21 12.877C40.108 12.469 39.785 11.466 39.547 10.939C39.989 10.82 40.397 10.497 40.958 9.953C41.553 9.426 43.406 7.369 44.562 5.329L46.602 6.196C45.531 7.777 44.188 9.29 42.896 10.531L49.866 10.31C49.203 9.562 48.523 8.848 47.894 8.219ZM63.041 16.923L63.993 16.583L64.35 18.385C61.953 19.422 59.335 20.459 57.329 21.258L56.428 19.184H56.411C57.567 18.827 59.199 18.266 60.933 17.671V11.636H57.006V9.613H60.933V5.873H63.041V16.923ZM68.022 18.997H69.535C70.164 18.997 70.266 18.198 70.368 15.155C70.861 15.546 71.745 15.971 72.306 16.107C72.119 19.626 71.643 20.969 69.722 20.969H67.699C65.829 20.969 65.268 20.255 65.268 17.909V5.89H67.376V9.596H71.813V11.602H67.376V17.926C67.376 18.844 67.461 18.997 68.022 18.997Z"
+                                    fill="white" />
+                            </svg>
+
+                        </li>
                         <li id="tabNav_1" data-popup-trigger="popUp_tabCon_1">
                             <!-- 新竹 -->
                             <svg class="_TC" width="79" height="27" viewBox="0 0 79 27" fill="none"
@@ -386,6 +405,77 @@
                 </div>
                 <div class="twBlock__info">
                     <div class="tabsGp__body">
+                        <div id="popUp_tabCon_0" class="tabContent popUpWrap">
+                            <!-- 臺北   -->
+                            <article class="mapCard">
+                                <span class="close"><img src="images/close.png" alt=""></span>
+                                <div class="mapCardHead">
+                                    <div class="mapCardHead__mj">
+                                        <span class="mjTt _TC">臺北<i class="mkSpan">主展區</i></span>
+                                        <span class="mjTt _EN">Taipei<i class="mkSpan">e主展區</i></span>
+
+                                        <span class="subTt _TC">好竹意</span>
+                                        <span class="subTt _EN">eee好竹意</span>
+                                    </div>
+                                    <div class="mapCardHead__pic">
+                                        <img src="images/map-taipei/map.svg">
+                                    </div>
+                                </div>
+                                <div class="mapCardBody">
+                                    <div class="toolData">
+                                        <div class="toolData__bx">
+                                            <span class="icon"><img src="images/icon-time.png"></span>
+                                            <span class="txt _TC">2026/6/12 - 6/15，10/8論壇暨閉幕式</span>
+                                        </div>
+                                        <div class="toolData__bx">
+                                            <span class="icon"><img src="images/icon-map.png"></span>
+                                            <span class="txt _TC">松山文創園區 (松菸) 台灣設計館02展區、（閉幕）創意劇場</span>
+                                            <span class="txt _EN">eeee</span>
+                                        </div>
+                                    </div>
+                                    <div class="docTxt">
+                                        <p class="_TC">
+                                            以「在地竹場」為展覽延伸，串連新竹、臺中、南投、雲林、屏東與花蓮衛星展區。讓觀眾造訪時能蒐集各地好竹意點滴，彷彿走進一本立體展開的竹圖鑑，感受臺灣竹材從山林到生活的韌性，編織出屬於土地最動人的永續風景。
+                                        </p>
+                                        <p class="_EN">
+                                            eeeee
+                                        </p>
+                                    </div>
+                                    <div class="mkTxt">
+                                        <p class="_TC">
+                                            主辦單位 林業保育署｜執行單位 台灣經濟研究院
+                                        </p>
+                                        <p class="_EN">
+                                            eeeee
+                                        </p>
+                                    </div>
+                                    <div class="swiper testSwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/map-taipei/1.jpg" alt="新竹 Hsinchu" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/map-taipei/2.jpg" alt="台北 Taipei" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/map-taipei/3.jpg" alt="台北 Taipei" />
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="mapCardFooter">
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_6"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">雲林</span><span
+                                            class="_EN">Yunlin</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_1"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">新竹</span><span
+                                            class="_EN">Hsinchu</span></div>
+                                </div>
+                            </article>
+                        </div>
                         <div id="popUp_tabCon_1" class="tabContent popUpWrap">
                             <!-- 新竹 -->
                             <article class="mapCard">
@@ -454,8 +544,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_6"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">雲林</span><span class="_EN">Yunlin</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_2"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">台中</span><span class="_EN">Taichung</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_0"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">臺北</span><span
+                                            class="_EN">Taipei</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_2"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">台中</span><span
+                                            class="_EN">Taichung</span></div>
                                 </div>
                             </article>
                         </div>
@@ -526,8 +620,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_1"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">新竹</span><span class="_EN">Hsinchu</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_3"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">南投</span><span class="_EN">Nantou</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_1"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">新竹</span><span
+                                            class="_EN">Hsinchu</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_3"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">南投</span><span
+                                            class="_EN">Nantou</span></div>
                                 </div>
                             </article>
                         </div>
@@ -603,8 +701,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_2"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">台中</span><span class="_EN">Taichung</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_4"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">屏東</span><span class="_EN">Pingtung</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_2"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">台中</span><span
+                                            class="_EN">Taichung</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_4"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">屏東</span><span
+                                            class="_EN">Pingtung</span></div>
                                 </div>
                             </article>
                         </div>
@@ -675,8 +777,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_3"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">南投</span><span class="_EN">Nantou</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_5"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">花蓮</span><span class="_EN">Hualien</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_3"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">南投</span><span
+                                            class="_EN">Nantou</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_5"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">花蓮</span><span
+                                            class="_EN">Hualien</span></div>
                                 </div>
                             </article>
                         </div>
@@ -715,7 +821,8 @@
                                     </div>
                                     <div class="docTxt">
                                         <p class="_TC">
-                                            以竹林療癒為核心，串聯步道健走與舒壓 SPA，展現自然環境的修復力。現場展示農校與島嶼構竹藝術，並結合台灣原生動物竹編，勾勒生動的工藝景致。透過碳化設備與纖維產品，傳遞循環經濟願景；墨竹茶間則將竹炭融入室內裝修，搭配花東竹生活市集與茶席，邀您在墨色與茶香中，深度探索竹資源從傳統工藝到現代永續生活的共生美學。
+                                            以竹林療癒為核心，串聯步道健走與舒壓
+                                            SPA，展現自然環境的修復力。現場展示農校與島嶼構竹藝術，並結合台灣原生動物竹編，勾勒生動的工藝景致。透過碳化設備與纖維產品，傳遞循環經濟願景；墨竹茶間則將竹炭融入室內裝修，搭配花東竹生活市集與茶席，邀您在墨色與茶香中，深度探索竹資源從傳統工藝到現代永續生活的共生美學。
                                         </p>
                                         <p class="_EN">
                                             eeeee
@@ -747,8 +854,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_4"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">屏東</span><span class="_EN">Pingtung</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_6"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">雲林</span><span class="_EN">Yunlin</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_4"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">屏東</span><span
+                                            class="_EN">Pingtung</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_6"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">雲林</span><span
+                                            class="_EN">Yunlin</span></div>
                                 </div>
                             </article>
                         </div>
@@ -819,8 +930,12 @@
                                     </div>
                                 </div>
                                 <div class="mapCardFooter">
-                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_5"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">花蓮</span><span class="_EN">Hualien</span></div>
-                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_1"><span class="icon"><img src="images/map_next.png"></span><span class="_TC">新竹</span><span class="_EN">Hsinchu</span></div>
+                                    <div class="btn --prev" data-popup-trigger="popUp_tabCon_5"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">花蓮</span><span
+                                            class="_EN">Hualien</span></div>
+                                    <div class="btn --next" data-popup-trigger="popUp_tabCon_0"><span class="icon"><img
+                                                src="images/map_next.png"></span><span class="_TC">臺北</span><span
+                                            class="_EN">Taipei</span></div>
                                 </div>
                             </article>
                         </div>
